@@ -87,6 +87,7 @@ printf("\n p%d\t\t%d\t\t%d\t\t%d",i,bt[i],wt[i],tt[i]);
 printf("\n\n\t Average waiting time%f\n\t Average turn around time%f", sum/n,at/n);
 }
 
+
 /*output
 Enter the number of processes: 4
 Enter the arrival time for process 1:0
