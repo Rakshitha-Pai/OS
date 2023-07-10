@@ -50,19 +50,56 @@
 49.	    {  
 50.	        i=0;  
 51.	    }  
-52.	    else if(at[i+1]<=sum)  
-53.	    {  
-54.	        i++;  
-55.	    }  
-56.	    else  
-57.	    {  
-58.	        i=0;  
-59.	    }  
-60.	}  
-61.	// represents the average waiting time and Turn Around time  
-62.	avg_wt = wt * 1.0/NOP;  
-63.	avg_tat = tat * 1.0/NOP;  
-64.	printf("\n Average Turn Around Time: \t%f", avg_wt);  
-65.	printf("\n Average Waiting Time: \t%f", avg_tat);  
-66.	getch();  
-67.	}  
+	    else if(at[i+1]<=sum)  
+    {  
+	        i++;  
+    }  
+    else  
+	    {  
+	        i=0;  
+	    }  
+	}  
+	// represents the average waiting time and Turn Around time  
+	avg_wt = wt * 1.0/NOP;  
+	avg_tat = tat * 1.0/NOP;  
+	printf("\n Average Turn Around Time: \t%f", avg_wt);  
+	printf("\n Average Waiting Time: \t%f", avg_tat);  
+	getch();  
+	}  
+/*output:
+Total number of process in the system: 5
+
+ Enter the Arrival and Burst time of the Process[1]
+ Arrival time is:       0
+ 
+Burst time is:  5
+
+ Enter the Arrival and Burst time of the Process[2]
+ Arrival time is:       1
+ 
+Burst time is:  3
+
+ Enter the Arrival and Burst time of the Process[3]
+ Arrival time is:       2
+ 
+Burst time is:  1
+
+ Enter the Arrival and Burst time of the Process[4]
+ Arrival time is:       3
+ 
+Burst time is:  2
+
+ Enter the Arrival and Burst time of the Process[5]
+ Arrival time is:       4
+ 
+Burst time is:  3
+Enter the Time Quantum for the process:         2
+
+ Process No              Burst Time              TAT             Waiting Time 
+Process No[3]            1                               3                       2
+Process No[4]            2                               4                       2
+Process No[2]            3                               11                      8
+Process No[5]            3                               9                       6
+Process No[1]            5                               14                      9
+ Average Turn Around Time:      5.400000
+ Average Waiting Time:  8.200000[1] + Done           */
